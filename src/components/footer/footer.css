@@ -1,0 +1,24 @@
+.footer_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer_contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.footer_icons {
+    font-size: 2em;
+}
+
+@media screen and (max-width: 600px) {
+    .footer_icons {
+        font-size: 1em;
+    }
+}

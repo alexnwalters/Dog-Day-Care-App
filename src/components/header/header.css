@@ -44,7 +44,7 @@
         text-align: center;
     }
 
-    .header_nav.toggled .header_nav_right div {
+    .header_nav.toggled .header_nav_right a {
         padding: 20px 0;
     }
 }

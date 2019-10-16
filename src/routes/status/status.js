@@ -11,12 +11,12 @@ class Status extends Component {
         const { applications } = this.props
         const categories = ['Pending', 'Accepted', 'Declined']
         return ( 
-            <div>
+            <div className='status'>
                 {categories.map(category => {
                     return (
                         <div key={category}>
                             <h3>{category}</h3>
-                            <ul className='request_categories'>
+                            <ul className='status_labels'>
                                 <li>Contact Name</li>
                                 <li>Dog Name</li>
                                 <li>Service</li>

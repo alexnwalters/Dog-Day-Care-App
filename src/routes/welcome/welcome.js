@@ -1,37 +1,42 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import './welcome.css';
 
 class Welcome extends Component {
     render() {
         return(
-            <div>
+            <div className='welcome'>
                 <div>
-                    <h1>Dog Day Care</h1>
+                    <h1>Welcome to Dog Day Care</h1>
                 </div>
             
-                <div>
-                    <h2>Welcome to Dog Day Care</h2>
-                    <p>Invidunt tempor sea dolores labore ut ipsum sit consetetur dolor. Et accusam dolores est rebum eos gubergren diam vero. Amet.</p>
-                    <button><Link to='/about'>About Us</Link></button>
+                <div className='welcome_hero'>
+                    <h2 className='welcome_hero_image'>[Add Hero Image]</h2>
+                    <div>
+                        <h3>Invidunt tempor sea dolores labore ut ipsum sit consetetur dolor. Et accusam dolores est rebum eos gubergren diam vero. Amet.</h3>
+                        <button><Link to='/about'> more about us</Link></button>
+                    </div>
                 </div>
 
                 <div>
                     <h2>Our Sevices</h2>
-                    <ul className="services">
+                    <ul className="welcome_services">
                         <li>
                             <h3>Day Care</h3>
-                            <Link to='/services'>more info...</Link>
+                            <p>Voluptua amet sanctus duo accusam voluptua ea voluptua. Ipsum est lorem dolor rebum. Est invidunt.</p>
+                            <button><Link to='/services'>more info...</Link></button>
                         </li>
                         <li>
                             <h3>Overnight Care</h3>
-                            <Link to='/services'>more info...</Link>
+                            <p>Accusam nonumy justo justo clita est eirmod sanctus vero kasd sed. Justo et sed kasd.</p>
+                            <button><Link to='/services'>more info...</Link></button>
                         </li>
                     </ul>
                 </div>
         
                 <div>
                     <h2>Our Clients</h2>
-                    <div>
+                    <div className="welcome_reviews">
                         <div>
                             <h3>Review 1</h3>
                             <p>Justo diam accusam sit lorem et ea et sed sit.</p>

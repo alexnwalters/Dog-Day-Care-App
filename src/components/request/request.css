@@ -1,0 +1,15 @@
+.request_button {
+    border: black solid 1px;
+    margin-bottom: 3px;
+}
+
+.request_button:hover {
+    background: lightsteelblue;
+}
+
+.request_labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}

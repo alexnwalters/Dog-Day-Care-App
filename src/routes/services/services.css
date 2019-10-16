@@ -1,0 +1,11 @@
+.services_type {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.services_image {
+    min-width: 35vw;
+    min-height: 35vh;
+    background: lightgrey;
+}

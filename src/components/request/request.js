@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Details from '../details/details'
+import './request.css'
 
 class Request extends Component {
     static defaultProps = {
@@ -23,14 +24,14 @@ class Request extends Component {
         const {contact_info, dog_info, service_info} = this.props
         return(
             <div>
-                <button onClick={e => {this.showDetails()}}>
-                <ul>
-                    <li>{contact_info.contact_name}</li>
-                    <li>{dog_info.dog_name}</li>
-                    <li>{service_info.service}</li>
-                    <li>{service_info.care_date}</li>
-                </ul>
-                </button>
+                <div className='request_button' onClick={e => {this.showDetails()}}>
+                    <ul className='request_labels'>
+                        <li>{contact_info.contact_name}</li>
+                        <li>{dog_info.dog_name}</li>
+                        <li>{service_info.service}</li>
+                        <li>{service_info.care_date}</li>
+                    </ul>
+                </div>
                 <Details show={this.state.show} onClose={this.showDetails} {...this.props}/>
             </div>
         )

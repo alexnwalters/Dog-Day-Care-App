@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import NavLead from './nav_lead';
-import NavItem from './nav_item';
+import { Link } from 'react-router-dom'
 import './header.css'
 
 class Header extends Component{
@@ -36,12 +35,14 @@ class Header extends Component{
 
         return(
             <nav className='header'>
-                <div className={top_menu_class}>
-                    <NavLead title='Home' link='/' closeNav={this.closeNav}/>
+                <div className={top_menu_class}>                    
+                        <Link to='/' onClick={this.closeNav}> 
+                            <FontAwesomeIcon icon='home' className='header_nav_lead'/>
+                        </Link> 
                     <div className='header_nav_right'>
-                        <NavItem title='About' link='/about' closeNav={this.closeNav} />
-                        <NavItem title='Services' link='/services' closeNav={this.closeNav}/>
-                        <NavItem title='Apply' link='/apply' closeNav={this.closeNav}/>
+                        <Link to='/About' onClick={this.closeNav}>About</Link>
+                        <Link to='/Services' onClick={this.closeNav}>Services</Link>
+                        <Link to='/Apply' onClick={this.closeNav}>Apply</Link>
                     </div>
                     <FontAwesomeIcon icon='bars' className='header_nav_icon' onClick={this.setNavToggle}/>
                 </div>

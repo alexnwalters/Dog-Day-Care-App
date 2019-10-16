@@ -1,0 +1,38 @@
+.welcome {
+    width: 100%;
+}
+
+.welcome_hero {
+    display: flex;
+}
+
+.welcome_hero_image {
+    min-width: 350px;
+    height: 250px;
+    background: whitesmoke;
+    margin: auto;
+}
+
+.welcome_services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.welcome_services li {
+    background-color: whitesmoke;
+    width: 45%;
+    padding: 20px 10px;
+}
+
+.welcome_reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.welcome_reviews div {
+    background-color: whitesmoke;
+    width: 30%;
+    padding: 20px 10px;
+}

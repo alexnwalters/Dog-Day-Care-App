@@ -9,3 +9,9 @@
     min-height: 35vh;
     background: lightgrey;
 }
+
+@media screen and (max-width: 600px) {
+    .services_image {
+        display: none;
+    }
+}

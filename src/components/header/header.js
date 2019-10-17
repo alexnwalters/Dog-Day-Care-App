@@ -37,7 +37,7 @@ class Header extends Component{
             <nav className='header'>
                 <div className={top_menu_class}>                    
                         <Link to='/' onClick={this.closeNav}> 
-                            <FontAwesomeIcon icon='home' className='header_nav_lead'/>
+                            <FontAwesomeIcon icon='dog' className='header_nav_lead'/>
                         </Link> 
                     <div className='header_nav_right'>
                         <Link to='/About' onClick={this.closeNav}>About</Link>
@@ -45,6 +45,7 @@ class Header extends Component{
                         <Link to='/Apply' onClick={this.closeNav}>Apply</Link>
                     </div>
                     <FontAwesomeIcon icon='bars' className='header_nav_icon' onClick={this.setNavToggle}/>
+                    <FontAwesomeIcon icon='window-close' className='header_nav_close' onClick={this.setNavToggle}/>
                 </div>
             </nav>
         )

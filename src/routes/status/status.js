@@ -7,6 +7,10 @@ class Status extends Component {
         applications: []
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     renderRequests() {
         const { applications } = this.props
         const categories = ['Pending', 'Accepted', 'Declined']
@@ -17,10 +21,10 @@ class Status extends Component {
                         <div key={category}>
                             <h3>{category}</h3>
                             <ul className='status_labels'>
-                                <li>Contact Name</li>
-                                <li>Dog Name</li>
+                                <li>Contact</li>
+                                <li>Dog</li>
                                 <li>Service</li>
-                                <li>Date Requested</li>
+                                <li>Date</li>
                             </ul>
                             <div>
                                 {applications.map((request, i) => {

@@ -9,11 +9,15 @@ class Footer extends Component{
             <nav className='footer'>
                 <div className='footer_nav'>
                     <div className='footer_contacts'>
-                        <FontAwesomeIcon icon='envelope' className='footer_icons'>
-                            <a href='mailto:test@test.com?Subject=Hello%20Dog%20Day%20Care' target='blank'>Email</a>
-                        </FontAwesomeIcon>
-                        <FontAwesomeIcon icon={['fab', 'facebook-square']} className='footer_icons'/>
-                        <FontAwesomeIcon icon={['fab', 'instagram']} className='footer_icons'/>                     
+                        <a href='mailto:test@test.com?Subject=Hello%20Dog%20Day%20Care' target='blank'>
+                            <FontAwesomeIcon icon='envelope' className='footer_icons'/>
+                        </a>
+                        <a href='https://www.facebook.com/pawsitivevibezmd/' target='blank'>
+                            <FontAwesomeIcon icon={['fab', 'facebook-square']} className='footer_icons'/>
+                        </a>
+                        <a href='https://www.instagram.com/pawsitivevibezmd/' target='blank'>
+                            <FontAwesomeIcon icon={['fab', 'instagram']} className='footer_icons'/>   
+                        </a>                                          
                     </div>
                     <Link to='/login'>Admin Login</Link>
                 </div>

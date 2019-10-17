@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import './welcome.css';
 
 class Welcome extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return(
             <div className='welcome'>
@@ -38,16 +43,19 @@ class Welcome extends Component {
                     <h2>Our Clients</h2>
                     <div className="welcome_reviews">
                         <div>
-                            <h3>Review 1</h3>
-                            <p>Justo diam accusam sit lorem et ea et sed sit.</p>
+                            {/* <h3>Review 1</h3>
+                            <p>Justo diam accusam sit lorem et ea et sed sit.</p> */}
+                            <div className="fb-post" data-href='https://www.facebook.com/linzy.french/posts/10157032548594902'  data-show-text='true'></div>
                         </div>
-                        <div>
-                            <h3>Review 2</h3>
-                            <p>Eirmod aliquyam sanctus sed est lorem consetetur dolore amet aliquyam.</p>
+                        <div className='review_med_hide'>
+                            {/* <h3>Review 2</h3>
+                            <p>Eirmod aliquyam sanctus sed est lorem consetetur dolore amet aliquyam.</p> */}
+                            <div className="fb-post" data-href='https://www.facebook.com/brittany.tucker.79/posts/10215253836518950'  data-show-text='true'></div>
                         </div>
-                        <div>
-                            <h3>Review 3</h3>
-                            <p>Aliquyam gubergren amet eos nonumy consetetur, accusam consetetur voluptua et.</p>
+                        <div className='review_lrg_hide'>
+                            {/* <h3>Review 3</h3>
+                            <p>Aliquyam gubergren amet eos nonumy consetetur, accusam consetetur voluptua et.</p> */}
+                            <div className="fb-post" data-href='https://www.facebook.com/carol.monacopowers/posts/10218762667766234'  data-show-text='true'></div>
                         </div>
                     </div>
                 </div>

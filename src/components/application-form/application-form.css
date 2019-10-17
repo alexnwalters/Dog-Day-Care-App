@@ -1,13 +1,10 @@
 .form_section {
+    max-width: 400px;
     display: flex;
+    flex-direction: column;
     text-align: left;
 }
 
 .form_section legend {
    text-align: center;
-}
-
-.form_section input {
-    background-color: azure;
-    border: black 1px solid;
 }

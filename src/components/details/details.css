@@ -8,8 +8,9 @@
     /* bottom: 0; */
     margin: auto;
     background-color: rgba(0,0,0, 0.5);
-  }
-  .popup_details {
+}
+
+.popup_details {
     position: absolute;
     left: 10%;
     right: 10%;
@@ -19,4 +20,4 @@
     border-radius: 20px;
     background: white;
     overflow-y: auto;
-  }
+}

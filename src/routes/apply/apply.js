@@ -6,6 +6,10 @@ class Apply extends Component {
         addApplication: () => {},
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return (
             <div>

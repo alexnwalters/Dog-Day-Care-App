@@ -1,21 +1,50 @@
 import React, { Component } from 'react';
-import Request from '../../components/request/request'
-import './status.css'
+import { withRouter } from 'react-router-dom'
+import Request from '../../components/Request/Request'
+import TokenService from '../../services/TokenService'
+import RequestsApiService from '../../services/RequestsApiService'
+import './Status.css'
 
 class Status extends Component {
     static defaultProps = {
-        applications: []
+        history: {
+            push: () => {}
+        }
+    }
+
+    constructor(props){
+        super(props)
+        this.state = {
+            applications: {}
+        }
+    }
+
+    handleLogOut = () => {
+        this.props.history.push('/')
+        TokenService.clearAuthToken()
+    }
+
+    setApplications = (data) => {
+        this.setState({
+            applications: data
+        })
     }
 
     componentDidMount() {
         window.scrollTo(0, 0);
+
+        RequestsApiService.getRequests()
+            .then(res => this.setApplications(res))
+            .catch()
+
     }
 
     renderRequests() {
-        const { applications } = this.props
+        const { applications } = this.state
         const categories = ['Pending', 'Accepted', 'Declined']
         return ( 
             <div className='status'>
+                <button onClick={this.handleLogOut}>Logout</button>
                 {categories.map(category => {
                     return (
                         <div key={category}>
@@ -47,15 +76,19 @@ class Status extends Component {
     }
 
     render() {
+        const { applications } = this.state
         return(
             <div>
                 <h1>Request Administration</h1>
                 <div>
-                    {this.renderRequests()}
+                    {applications.length
+                        ? this.renderRequests()
+                        : null
+                    }
                 </div>
             </div>
         )
     }
 }
 
-export default Status;
+export default withRouter(Status);

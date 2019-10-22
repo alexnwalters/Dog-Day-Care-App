@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import Welcome from './welcome';
+import Welcome from './Welcome';
 
 it('render without crashing', () => {
     const div = document.createElement('div');

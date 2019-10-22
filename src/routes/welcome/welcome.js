@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './welcome.css';
+import './Welcome.css';
 
 class Welcome extends Component {
 

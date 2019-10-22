@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ApplicationForm from '../../components/application-form/application-form';
+import ApplicationForm from '../../components/ApplicationForm/ApplicationForm';
 
 class Apply extends Component {
     static defaultProps = {

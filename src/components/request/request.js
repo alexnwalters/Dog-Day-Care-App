@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Details from '../details/details'
-import './request.css'
+import Details from '../Details/Details'
+import './Request.css'
 
 class Request extends Component {
     static defaultProps = {

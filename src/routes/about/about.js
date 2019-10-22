@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MapContainer from '../../components/map/map';
+import MapContainer from '../../components/Map/Map';
 
 class About extends Component {
 

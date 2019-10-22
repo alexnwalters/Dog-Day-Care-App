@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
-import Header from './components/header/header';
-import Footer from './components/footer/footer'
-import Welcome from './routes/welcome/welcome'
-import About from './routes/about/about';
-import Services from './routes/services/services';
-import Apply from './routes/apply/apply';
-import Login from './routes/login/login';
-import Status from './routes/status/status';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer'
+import Welcome from './routes/Welcome/Welcome'
+import About from './routes/About/About';
+import Services from './routes/Services/Services';
+import Apply from './routes/Apply/Apply';
+import Login from './routes/Login/Login';
+import Status from './routes/Status/Status';
+import PrivateRoute from './utils/PrivateRoute';
+import PublicRoute from './utils/PublicRoute';
 import './App.css';
 import STORE from './STORE'
+
 
 class App extends Component {
     constructor(props){
@@ -33,17 +36,19 @@ class App extends Component {
                 </header>
                 <section className='main_section'>
                     <Switch>
-                        <Route path='/' component={Welcome} exact />
-                        <Route path='/about' component={About} />
-                        <Route path='/services' component={Services} />
-                        <Route 
+                        <PublicRoute path='/' component={Welcome} exact />
+                        <PublicRoute path='/about' component={About} />
+                        <PublicRoute path='/services' component={Services} />
+                        <PublicRoute 
                             path='/apply'
-                            render={(props) => <Apply {...props} addApplication={this.handleApplication} />}
+                            component={Apply}
+                            //render={(props) => <Apply {...props} addApplication={this.handleApplication} />}
                         />
-                        <Route path='/login' component={Login} />
-                        <Route
+                        <PublicRoute path='/login' component={Login} />
+                        <PrivateRoute
                             path='/status'
-                            render={(props) => <Status {...props} applications={this.state.applications} />}
+                            component={Status}
+                            // render={(props) => <Status {...props} applications={this.state.applications} />}
                         />
                     </Switch>
                 </section>

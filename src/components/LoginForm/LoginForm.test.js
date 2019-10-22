@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import ApplicationForm from './application-form';
+import LoginForm from './LoginForm';
 
 it('render without crashing', () => {
     const div = document.createElement('div');
     ReactDOM.render(
         <BrowserRouter>
-            <ApplicationForm />
+            <LoginForm />
         </BrowserRouter>,
         div
     );

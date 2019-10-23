@@ -1,6 +1,5 @@
 .App {
-    padding-top: 20px;
-    padding-bottom: 60px;
+    padding: 60px 0px;
     text-align: center;
     justify-content: center;
 }
@@ -12,14 +11,18 @@ input {
 .header {
     position: fixed;
     left: 0;
-    top: 0;
+    top: 5px;
     width: 100%;
-    background-color: lightgrey;
 }
 
 ul {
     list-style: none;
     padding-inline-start: 0px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
 }
 
 .footer {
@@ -28,6 +31,9 @@ ul {
     bottom: 0;
     width: 100%;
     background-color: lightgrey;
+    -webkit-box-shadow: inset 0px 3px 3px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 3px 3px 0px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 3px 3px 0px rgba(0,0,0,0.3);
 }
 
 

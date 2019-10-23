@@ -3,20 +3,71 @@
 }
 
 .welcome_hero {
+    z-index: 1;
     display: flex;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+    background: rgb(250,237,224);
+    background: -moz-linear-gradient(0deg, rgba(250,237,224,1) 41%, rgba(144,238,144,1) 78%);
+    background: -webkit-linear-gradient(0deg, rgba(250,237,224,1) 41%, rgba(144,238,144,1) 78%);
+    background: linear-gradient(0deg, rgba(250,237,224,1) 41%, rgba(144,238,144,1) 78%);
 }
 
 .welcome_hero_image {
-    min-width: 350px;
-    height: 250px;
-    background: whitesmoke;
+    border-radius: 10px;
     margin: auto;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
 }
 
-.welcome_services {
+.welcome_hero_overview {
+    padding: 10px;
+}
+
+.welcome_services_banner_image {
+    z-index: -1;
+    transform: translateY(-5px);
+    max-width: 100%;
+    height: auto;
+}
+
+.welcome_services_banner {
+    margin-top: -105px;
+    background: #41ade5;
+    color: #fff;
+    position: relative;
+    height: 100px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+  }
+  .welcome_services_banner:before {
+    background: inherit;
+    top: 0;
+    content: '';
+    display: block;
+    height: 80%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-5deg);
+    transform-origin: 0 0;
+    z-index: -1;
+  }
+
+.welcome_services ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .welcome_services li {
@@ -31,9 +82,8 @@
     justify-content: space-around;
 }
 
-.welcome_reviews div {
+.welcome_review_contianer {
     background-color: whitesmoke;
-    padding: 20px 10px;
 }
 
 @media screen and (max-width: 600px) {
@@ -41,21 +91,40 @@
         display: flex;
         flex-direction: column;
     }
-    
+
     .welcome_hero_image {
-        min-width: 200px;
-        height: 125px;
+        max-height: 60%;
+        width: 60%;
+    }
+
+    .welcome_services ul {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+    }
+
+    .welcome_services li {
+        width: unset;
+        margin: 5px 0px;
+    }
+
+    .welcome_review_contianer {
+        overflow-x: scroll;
+        border-right: rgba(158, 158, 158, 0.25) 3px solid;
+        -webkit-box-shadow: inset 5px 0px 3px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: inset 5px 0px 3px 0px rgba(0,0,0,0.3);
+        box-shadow: inset 5px 0px 3px 0px rgba(0,0,0,0.3);
     }
 }
 
 @media screen and (max-width: 1100px) {
-    div.review_lrg_hide {
-      display: none;
+    .welcome_reviews {
+        flex-direction: column;
     }
-  }
-  
-  @media screen and (max-width: 750px) {
-    div.review_med_hide {
-      display: none;
+
+    .welcome_review_contianer {
+        margin-bottom: 10px;
+        padding: 10px;
     }
-  }
+
+}

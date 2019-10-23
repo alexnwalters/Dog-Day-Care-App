@@ -6,8 +6,10 @@
 }
 
 body {
+  z-index: 0;
   max-width: 860px;
   margin: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #90ee90;
 }

@@ -9,7 +9,9 @@ class Details extends Component {
     static defaultProps = {
         history: {
             push: () => {}
-        }
+        },
+        onClose: () => {},
+        show: false
     }
     
     onClose = (e) => {
@@ -80,6 +82,7 @@ class Details extends Component {
 
     render() {
         const { show, service_info, contact_info, dog_info, behavioral_info } = this.props
+
         if(!show) {
             return null;
         }
@@ -97,7 +100,7 @@ class Details extends Component {
                         <div>
                             <h3>Contact Information</h3>
                             <p>Name: {contact_info.contact_name}</p>
-                            <p>Email: {contact_info.email}</p>
+                            <p>Email: <a href={`mailto:${contact_info.email}?Subject=Thank%20you%20for%20your%20care%20request!`} target='blank'>{contact_info.email}</a></p>
                             <p>Phone: {contact_info.phone}</p>
                         </div>
                         <div>

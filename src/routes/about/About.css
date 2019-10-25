@@ -1,0 +1,63 @@
+.about_main_title {
+    background-color: white;
+    height: 60px;
+    margin: 0;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.about_image {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.about_people .about_image {
+    background-image: url('../../utils/images/freddie_smile.jpg');
+    background-position-y: 10%;
+}
+
+.about_culture .about_image {
+    background-image: url('../../utils/images/husky_play.jpg');
+}
+
+.about_facilities .about_image {
+    background-image: url('../../utils/images/group_wide_banner.jpg');
+}
+
+.about_details {
+    padding: 0 10px 10px;
+    text-align: justify;
+}
+
+.about_memberships {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.about_memberships div {
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about_memberships_bic {
+    background-image: url('../../utils/images/bic_pet_logo.png');
+}
+
+.about_memberships_logo {
+    background-image: url('../../utils/images/FreddieLogo.jpg');
+} 
+
+.about_memberships_psi {
+    background-image: url('../../utils/images/PSI-Member-Logo-ILL.png');
+}

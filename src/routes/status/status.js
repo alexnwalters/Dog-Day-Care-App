@@ -31,7 +31,9 @@ class Status extends Component {
     }
 
     componentDidMount() {
-        window.scrollTo(0, 0);
+        if((document.documentElement.scrollTop || document.body.scrollTop) !== 0) {
+            window.scrollTo(0, 0);
+        }
 
         RequestsApiService.getRequests()
             .then(res => this.setApplications(res))

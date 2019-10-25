@@ -1,8 +1,5 @@
 * {
-  /* margin: 0;
 	padding: 0;
-	border: 0; */
-  vertical-align: baseline;
 }
 
 body {
@@ -11,5 +8,4 @@ body {
   margin: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #90ee90;
 }

@@ -30,10 +30,12 @@ a:link, a:visited {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: lightgrey;
+    background-color: rgb(255, 255, 255);
     -webkit-box-shadow: inset 0px 3px 3px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: inset 0px 3px 3px 0px rgba(0,0,0,0.3);
     box-shadow: inset 0px 3px 3px 0px rgba(0,0,0,0.3);
 }
 
-
+textarea {
+    width: 90%;
+}

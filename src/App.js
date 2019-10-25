@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom'
+import { Switch } from 'react-router-dom'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer'
 import Welcome from './routes/Welcome/Welcome'
@@ -10,16 +10,12 @@ import Login from './routes/Login/Login';
 import Status from './routes/Status/Status';
 import PrivateRoute from './utils/PrivateRoute';
 import PublicRoute from './utils/PublicRoute';
-import './App.css';
-import STORE from './STORE'
-
+import './App.css'
 
 class App extends Component {
     constructor(props){
         super(props)
-        this.state = {
-            applications: STORE.applications,
-        }
+        this.state = {}
     }
     
     handleApplication = (application) => {
@@ -42,13 +38,11 @@ class App extends Component {
                         <PublicRoute 
                             path='/apply'
                             component={Apply}
-                            //render={(props) => <Apply {...props} addApplication={this.handleApplication} />}
                         />
                         <PublicRoute path='/login' component={Login} />
                         <PrivateRoute
                             path='/status'
                             component={Status}
-                            // render={(props) => <Status {...props} applications={this.state.applications} />}
                         />
                     </Switch>
                 </section>

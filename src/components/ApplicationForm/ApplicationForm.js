@@ -11,7 +11,7 @@ class ApplicationForm extends Component {
         super(props)
         this.state = {
             application: {},
-            confirmation: false
+            confirmation: false,
         }
     }
 
@@ -76,6 +76,7 @@ class ApplicationForm extends Component {
     }
 
     render() {
+        const today = new Date()
         return(
             <div>
             { (this.state.confirmation) 
@@ -92,16 +93,16 @@ class ApplicationForm extends Component {
                         <label htmlFor='phone'>Phone:</label>
                             <input type='tel'
                                 name='phone'
-                                pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
+                                pattern='^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$'
                                 required />
-                            <small>Format: 123-456-7890</small>
+                            <small>Must be 10 digits</small>
                         
                         <label htmlFor='service'>Which service are you inquiring about today?<br/>
                             <input type='radio' name='service' value='Day Care' required/> Day Care<br/>
                             <input type='radio' name='service' value='Overnight Care'/> Overnight Care
                         </label>
                         <label htmlFor='care_date'> Date for Care:</label>
-                            <input type='date' name='care_date' required/>
+                            <input type='date' name='care_date' min={`${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate() + 2}`} max='2029-12-31' required/>
                         
                     </fieldset>
 
@@ -115,7 +116,7 @@ class ApplicationForm extends Component {
                         
                         <label htmlFor='age_yrs'>Age:<br/>
                             <input type='number' name='age_yrs' min='0' max='30' required /> yrs.<br/>
-                            <input type='number' name='age_mos' min='0' max='12' required /> mos.
+                            <input type='number' name='age_mos' min='0' max='11' required /> mos.
                         </label>
 
                         <label htmlFor='sex'>Sex:<br/>
@@ -129,7 +130,7 @@ class ApplicationForm extends Component {
                         </label>
 
                         <label htmlFor='exam'>Month of last annual vet exam?</label>
-                            <input type='month' name='exam' required/>
+                            <input type='month' name='exam' min='2010-12' max={`${today.getFullYear()}-${today.getMonth() + 1}`} required/>
                         
                         <label htmlFor='vaccines'>Is current on all vaccinations?<br/>
                             <small>*we require vaccinations against rabies, DHLPPC, and Bordetella</small><br/>
@@ -185,21 +186,19 @@ class ApplicationForm extends Component {
                             <input type='radio' name='bite' value='No'/> No
                         </label>
                         
-                        <label htmlFor='bite_details'>If the bite broke the skin, describe the circumstance?</label>
-                            <input type='text' name='bite_details' required/>
-                            <small>*type 'n/a' or 'none' if not applicable</small>
+                        <label htmlFor='bite_details'>If the bite broke the skin, describe the circumstance?*</label>
+                            <textarea name='bite_details' rows='4' required></textarea>
                         
-                        <label htmlFor='children'>How does your dog react to children?</label>
-                            <input type='text' name='children' required/>
-                            <small>*type 'n/a' or 'none' if not applicable</small>
+                        <label htmlFor='children'>How does your dog react to children?*</label>
+                            <textarea type='textarea' rows='4' required></textarea>
                         
-                        <label htmlFor='visitors'>How does your dog react to visitors?</label>
-                            <input type='text' name='visitors' required/>
-                            <small>*type 'n/a' or 'none' if not applicable</small>
+                        <label htmlFor='visitors'>How does your dog react to visitors?*</label>
+                            <textarea type='textarea' rows='4' required></textarea>
                         
-                        <label htmlFor='absent'>How does your dog react to your absence?</label>
-                            <input type='text' name='absent' required/>
-                            <small>*type 'n/a' or 'none' if not applicable</small>
+                        <label htmlFor='absent'>How does your dog react to your absence?*</label>
+                            <textarea type='textarea' rows='4' required></textarea>
+                            <small>* type 'n/a' or 'none' if not applicable</small>
+                            
                         
                     </fieldset>
                     <input type='submit' />

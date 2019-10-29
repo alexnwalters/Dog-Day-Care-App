@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ApplicationForm from '../../components/ApplicationForm/ApplicationForm';
+import './Apply.css'
 
 class Apply extends Component {
     static defaultProps = {
@@ -14,8 +15,9 @@ class Apply extends Component {
 
     render() {
         return (
-            <div>
-                <h1>Application</h1>
+            <div className='apply'>
+                <h1 className='apply_main_title brushy'>Application</h1>
+                <div className='apply_image'></div>
                 <div>
                     <ApplicationForm addApplication={this.props.addApplication}/>
                 </div>

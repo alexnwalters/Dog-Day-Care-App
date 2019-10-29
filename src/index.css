@@ -4,8 +4,29 @@
 
 body {
   z-index: 0;
-  max-width: 860px;
   margin: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.lora {
+  font-family: 'Lora', serif;
+}
+
+.open_sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+  font-family: 'Brushy';
+  src: local('Brushy'), url('./utils/fonts/Brushy/Brusthy-XB39.ttf') format('truetype');
+}
+
+.brushy {
+  font-family: 'Brushy';
+}
+
+@font-face {
+  font-family: 'BrushySwash';
+  src: local('BrushySwash'), url('./utils/fonts/Brushy/BrusthySwash-gqx1.ttf') format('truetype');
 }

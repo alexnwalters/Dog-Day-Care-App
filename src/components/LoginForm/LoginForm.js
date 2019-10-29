@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import TokenService from '../../services/TokenService';
 import AuthApiService from '../../services/AuthApiService';
+import Loading from '../Loading/Loading'
 import './LoginForm.css';
 
 class LoginFrom extends Component {
@@ -15,6 +16,7 @@ class LoginFrom extends Component {
         super(props)
         this.state = {
             error: null,
+            loading: null
         }
     }
 
@@ -23,6 +25,7 @@ class LoginFrom extends Component {
         
         this.setState({ 
             error: null,
+            loading: true
         })
 
         const { user_name, password } = e.target
@@ -43,7 +46,7 @@ class LoginFrom extends Component {
     }
     
     render() {
-        const { error } = this.state
+        const { error, loading } = this.state
         
         return(
             <div>
@@ -58,7 +61,11 @@ class LoginFrom extends Component {
                         <label>Password:</label>
                             <input type='password' name='password' required />
                     </div>
-                    <button type='sumbit'>Login</button>
+                    
+                    {(!loading)
+                        ? <button type='sumbit'>Log In</button>
+                        : <Loading />}
+                    
                 </form>
                 <div>
                     <h3>Sample Login</h3>

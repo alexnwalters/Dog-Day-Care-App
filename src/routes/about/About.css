@@ -1,20 +1,15 @@
-.about_main_title {
-    background-color: white;
-    height: 60px;
-    margin: 0;
-    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
-    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
-    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
-}
-
 .about_image {
     height: 150px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+}
+
+.about_main_title {
+    font-family: 'Brushy';
 }
 
 .about_people .about_image {
@@ -28,11 +23,17 @@
 
 .about_facilities .about_image {
     background-image: url('../../utils/images/group_wide_banner.jpg');
+    background-position-y: 10%;
+}
+
+.about_title {
+    font-family: 'Lora', serif;
 }
 
 .about_details {
     padding: 0 10px 10px;
     text-align: justify;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .about_memberships {
@@ -60,4 +61,35 @@
 
 .about_memberships_psi {
     background-image: url('../../utils/images/PSI-Member-Logo-ILL.png');
+}
+
+@media screen and (min-width: 600px) {
+    .about_people, .about_facilities {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding: 10px;
+    }
+
+    .about_culture {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .about_image {
+        min-width: 44%;
+        margin: 0 2%;
+        height: unset;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+        -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+    }
+
+    .about div {
+        padding: 40px 10px;
+    }    
 }

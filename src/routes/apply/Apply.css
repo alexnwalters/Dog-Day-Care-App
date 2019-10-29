@@ -1,0 +1,10 @@
+.apply_image {
+    background-image: url('../../utils/images/little_dog.jpg');
+    background-position-y: 20%;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+}

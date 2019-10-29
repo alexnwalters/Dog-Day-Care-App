@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+import Logo from '../../utils/images/FreddieLogo.jpg'
 import './Header.css'
 
 class Header extends Component{
@@ -9,6 +10,11 @@ class Header extends Component{
         super(props)
         this.state = {
             menu_class: '',
+            focus_class: {
+                about: '',
+                services: '',
+                apply: '',
+            }
         }
     }
 
@@ -38,11 +44,12 @@ class Header extends Component{
                 <div className={top_menu_class}>                    
                         <Link to='/' onClick={this.closeNav}> 
                             <FontAwesomeIcon icon='dog' className='header_nav_lead'/>
+                            <img className='header_freddie_icon' src={Logo} alt='logo'></img>
                         </Link> 
-                    <div className='header_nav_right'>
-                        <Link to='/About' onClick={this.closeNav}>About</Link>
-                        <Link to='/Services' onClick={this.closeNav}>Services</Link>
-                        <Link to='/Apply' onClick={this.closeNav}>Apply</Link>
+                    <div className='header_nav_right open_sans'>
+                        <NavLink to='/About' activeClassName='highlighted' onClick={this.closeNav}>About</NavLink>
+                        <NavLink to='/Services' activeClassName='highlighted' onClick={this.closeNav}>Services</NavLink>
+                        <NavLink to='/Apply' activeClassName='highlighted' onClick={this.closeNav}>Apply</NavLink>
                     </div>
                     <FontAwesomeIcon icon='bars' className='header_nav_icon' onClick={this.setNavToggle}/>
                     <FontAwesomeIcon icon='window-close' className='header_nav_close' onClick={this.setNavToggle}/>

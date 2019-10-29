@@ -22,7 +22,19 @@
     top: 10%;
     bottom: 10%;
     margin: auto;
+    padding: 25px 5px 10px;
     border-radius: 20px;
     background: white;
     overflow-y: auto;
+}
+
+.popup_details_buttons {
+    position: fixed;
+    left: 15%;
+    top: 12%;
+}
+
+.popup_details_buttons button {
+    margin-right: 4px;
+    padding: 4px;
 }

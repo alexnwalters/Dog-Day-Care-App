@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch } from 'react-router-dom'
+import { Switch, Route, withRouter } from 'react-router-dom'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer'
 import Welcome from './routes/Welcome/Welcome'
@@ -10,12 +10,15 @@ import Login from './routes/Login/Login';
 import Status from './routes/Status/Status';
 import PrivateRoute from './utils/PrivateRoute';
 import PublicRoute from './utils/PublicRoute';
+import NotFound from './routes/NotFound/NotFound';
 import './App.css'
 
 class App extends Component {
     constructor(props){
         super(props)
-        this.state = {}
+        this.state = {
+            headerFocus: ''
+        }
     }
     
     handleApplication = (application) => {
@@ -33,17 +36,12 @@ class App extends Component {
                 <section className='main_section'>
                     <Switch>
                         <PublicRoute path='/' component={Welcome} exact />
-                        <PublicRoute path='/about' component={About} />
-                        <PublicRoute path='/services' component={Services} />
-                        <PublicRoute 
-                            path='/apply'
-                            component={Apply}
-                        />
+                        <Route path='/about' component={About} />
+                        <Route path='/services' component={Services} />
+                        <Route path='/apply' component={Apply} />
                         <PublicRoute path='/login' component={Login} />
-                        <PrivateRoute
-                            path='/status'
-                            component={Status}
-                        />
+                        <PrivateRoute path='/status' component={Status}/>
+                        <Route component={NotFound} />
                     </Switch>
                 </section>
                 <footer className='footer'>
@@ -54,4 +52,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default withRouter(App);

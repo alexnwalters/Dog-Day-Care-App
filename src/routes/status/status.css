@@ -6,4 +6,5 @@
 
 .status_labels li {
     border-bottom: solid black 1px;
+    width: 25%;
 }

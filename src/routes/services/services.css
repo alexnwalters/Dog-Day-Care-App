@@ -1,10 +1,5 @@
 .services_main_title {
-    background-color: white;
-    height: 60px;
-    margin: 0;
-    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
-    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
-    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    font-family: 'brushy';
 }
 
 .services_image {
@@ -12,27 +7,89 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
 }
 
 .services_day .services_image {
     background-image: url('../../utils/images/german.jpg');
-
 }
 
 .services_overnight .services_image {
-    background-image: url('../../utils/images/freddie_inside.jpg');
-    background-position-y: 25%;
+    background-image: url('../../utils/images/freddie_laying.jpg');
 }
 
 .services_info .services_image {
     background-image: url('../../utils/images/tail_wag.jpg');
 }
 
+.services_title {
+    font-family: 'Lora', serif;
+}
+
+.services_type {
+    padding: 0 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Open Sans', sans-serif;
+}
 
 .services_details {
-    padding: 0 10px 10px;
-    text-align: justify;
+    width: 60%;
+    padding-right: 10px;
+    border-right: black 1px solid;
+    text-align: left;
+}
+
+.services_info .services_details {
+    width: unset;
+    border-right: none;
+    padding: 0 10px;
+}
+
+.services_pricing {
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 60%;
+}
+
+@media screen and (min-width: 600px) {
+    .services_day, .services_info {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .services_overnight {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .services_image {
+        min-width: 44%;
+        margin: 0 2%;
+        height: unset;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+        -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+    }
+
+    .services section {
+        padding: 40px 10px;
+    }
+}
+
+    
+@media screen and (min-width: 1100px) {
+    .services_image {
+        height: 400px;
+    }
 }

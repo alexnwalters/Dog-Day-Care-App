@@ -1,0 +1,23 @@
+.request_button {
+    border: black solid 1px;
+    margin-bottom: 10px;
+    background-color: #fbac91;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+}
+
+.request_button:hover {
+   background-color:#96dae4;
+}
+
+.request_labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.request_labels li {
+    width: 25%;
+}

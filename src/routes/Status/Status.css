@@ -1,0 +1,10 @@
+.status_labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.status_labels li {
+    border-bottom: solid black 1px;
+    width: 25%;
+}

@@ -1,0 +1,309 @@
+.welcome_test {
+    font-family: 'BrushySwash';
+    line-height: 1;
+}
+
+.welcome_hero {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+}
+
+.welcome_hero_image {
+    width: 310px;
+    height: auto;
+    margin: auto;
+}
+
+.welcome_hero_overview {
+    padding: 10px 10px 20px;
+}
+
+.welcome_title {
+    font-family: 'Brushy';
+    line-height: 1;
+    margin-top: 40px;
+}
+
+.welcome_link {
+	position: relative;
+	z-index: 1;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+    padding-right: 10px;
+    padding: 3px;
+}
+
+.welcome_link::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top, #a1f7a1 25%, rgba(0, 0, 0, 0) 30%);
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	z-index: -1;
+    transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+}
+
+.welcome_link:hover::before {
+    transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+}
+
+.welcome_image {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+}
+
+.welcome_services .welcome_image {
+    background-image: url('../../utils/images/freddie_banner_1.jpg');
+    background-position-y: 10%;
+    margin-bottom: 10px;
+}
+
+.welcome_services ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.welcome_services li {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 10px 0;
+    border: 4px solid #ffa0a3;
+}
+
+.welcome_services_type_title{
+    min-width: 40%;
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+}
+
+.welcome_services_details {
+    border-left: solid 1px black;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px;
+}
+
+.welcome_apply .welcome_services_details {
+    text-align: center;
+    border-left: none;
+}
+
+.welcome_reviews .welcome_image {
+    background-image: url('../../utils/images/freddie_group.jpg');
+    margin-bottom: 10px;
+}
+
+.welcome_reviews_container {
+    margin-bottom: 20px;
+}
+
+.welcome_facebook_container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px;
+    max-height: 45vh;
+    border: 4px solid #fbac91;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+    -ms-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+    margin: 0 5px 10px;
+}
+
+.welcome_apply .welcome_image {
+    background-image: url('../../utils/images/group_running.jpg');
+    background-position-y: 40%;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .welcome_hero {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .welcome_hero_image {
+        height: unset;
+        width: unset;
+    }
+
+    .welcome_services .welcome_image, .welcome_reviews .welcome_image {
+        height: 300px;
+    }
+
+    .welcome_services ul {
+        flex-direction: row;
+        padding: 10px;
+        margin-top: 0;
+    }
+
+    .welcome_services li {
+        width: 50%;
+        display: unset;
+        padding: 0 10px 10px;
+    }
+
+    .welcome_services_type_title {
+        min-width: unset;
+    }
+    
+    .welcome_services_details {
+        border-left: none;
+        text-align: center;
+    }
+
+    .welcome_title .brushy_swash {
+        color: #96dae4;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .welcome_hero_image {
+        display: none;
+    }
+
+    .welcome_hero_overview h1 {
+        font-size: 60px;
+        text-shadow: 2px 2px black;
+        color: #fbac91;
+    }
+
+    .welcome_hero_overview p, .welcome_hero_overview .welcome_link {
+        font-size: 24px;
+    }
+
+    .welcome_services .welcome_title, .welcome_apply .welcome_title {
+        font-size: 32px;
+        line-height: 1;
+        margin-bottom: 0;
+    }
+
+    .welcome_reviews .welcome_title {
+        margin-bottom: 0;
+    }
+
+    .welcome_title .brushy_swash {
+        font-size: 44px;
+        color: #96dae4;
+    }
+
+    .welcome_services_type_title {
+        font-size: 22px;
+    }
+    
+    .welcome_hero {
+        display: unset;
+        justify-content: space-around;
+        padding: 0;
+        grid-area: hero;
+    }
+
+    .welcome_grid {
+        display: grid;
+        grid-template-areas: 
+        'hero hero'
+        'services reviews'
+        'apply apply';
+        grid-gap: 20px;
+        background-color: white;
+        padding: 10px;
+        -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+        -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+    }
+
+    .welcome_services {
+        display: flex;
+        flex-direction: column;
+        grid-area: services;
+    }
+
+    .welcome_services .welcome_image {
+        order: 3;
+    }
+
+    .welcome_reviews {
+        grid-area: reviews;
+    }
+
+    .welcome_apply {
+        display: flex;
+        flex-direction: column;
+        grid-area: apply;
+    }
+
+    .welcome_hero_image {
+        margin: unset;
+    }
+
+    .welcome_apply .welcome_image {
+        order: 3;
+        height: 200px;
+    }
+
+    .welcome_services li {
+        width: 45%;
+        min-height: 300px;
+        border: none;
+        background: #ffa0a3;
+        /* background-image: linear-gradient(to top left, #ffa0a3, #ffa0a3, rgba(255, 255, 255, 0.5)); */
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+        -ms-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+        -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+    }
+
+    .welcome_services .welcome_image {
+        height: 425px;
+        background-position-y: 4%
+    }
+
+    .welcome_reviews .welcome_image {
+        height: 375px;
+    }
+
+    .welcome_facebook_container {
+        border: 4px solid #fbac91;
+        background-color: #fbac91;
+    }
+
+    /* width */
+    .welcome_facebook_container::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    /* Track */
+    .welcome_facebook_container::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    .welcome_facebook_container::-webkit-scrollbar-thumb {
+        background: #96dae4;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    .welcome_facebook_container::-webkit-scrollbar-thumb:hover {
+        background: #63b1bd;
+    }
+}

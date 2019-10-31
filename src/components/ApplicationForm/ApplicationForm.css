@@ -1,0 +1,72 @@
+.application form {
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form_field>div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px 20px 20px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.form_field.contact_field>div {
+    border: 4px solid #ffa0a3;
+}
+
+.form_field.dog_field>div {
+    border: 4px solid #96dae4;
+}
+
+.form_field.behavioral_field>div {
+    border: 4px solid #fbac91;
+}
+
+.form_field legend {
+   font-family: 'Lora', serif;
+   font-weight: bolder;
+   margin: 10px 0;
+}
+
+.form_field label, .form_field>div>div {
+    margin-top: 15px;
+}
+
+.form_thanks_text {
+    padding: 0 15px;
+}
+
+.form_field input {
+    margin-left: 10px;
+}
+
+.form_field input[type=radio] {
+    margin-left: unset;
+}
+
+@media screen and (min-width: 600px) {
+    .form_field {
+        width: 90vw;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form_field legend {
+        width: 25%;
+        text-align: left;
+        padding-right: 20px;
+    }
+
+    .form_field>div {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .form_field {
+        width: 75%;
+    }
+}

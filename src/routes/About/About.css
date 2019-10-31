@@ -1,0 +1,119 @@
+.about_image {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+}
+
+.about_main_title {
+    font-family: 'Brushy';
+}
+
+.about_people .about_image {
+    background-image: url('../../utils/images/freddie_smile.jpg');
+    background-position-y: 10%;
+}
+
+.about_culture .about_image {
+    background-image: url('../../utils/images/husky_play.jpg');
+}
+
+.about_facilities .about_image {
+    background-image: url('../../utils/images/group_wide_banner.jpg');
+    background-position-y: 10%;
+}
+
+
+.about_title {
+    font-family: 'Lora', serif;
+}
+
+.about_details {
+    padding: 0 10px;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 5px;
+}
+
+.about_people .about_details {
+    border-top: 4px solid #ffa0a3;
+}
+
+.about_culture .about_details {
+    border-top: 4px solid #96dae4;
+}
+
+.about_facilities .about_details {
+    border-top: 4px solid #a1f7a1;
+}
+
+.about_memberships {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.about_memberships div {
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about_memberships_bic {
+    background-image: url('../../utils/images/bic_pet_logo.png');
+}
+
+.about_memberships_logo {
+    background-image: url('../../utils/images/FreddieLogo.jpg');
+} 
+
+.about_memberships_psi {
+    background-image: url('../../utils/images/PSI-Member-Logo-ILL.png');
+}
+
+@media screen and (min-width: 600px) {
+    .about_people, .about_facilities {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding: 10px;
+    }
+
+    .about_culture {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .about_image {
+        min-width: 44%;
+        margin: 0 2%;
+        height: unset;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+        -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
+    }
+
+    .about div {
+        padding: 40px 10px;
+    }    
+}
+
+@media screen and (min-width: 1300px) {
+    .about {
+        background: white;
+        padding: 10px;
+        -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+        -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+    }
+}

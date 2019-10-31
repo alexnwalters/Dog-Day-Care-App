@@ -12,7 +12,10 @@ class About extends Component {
     render(){
         return(
             <div className='about'>
-                <h1 className='about_main_title'>About Us</h1>
+                <h1 className='about_main_title'>
+                    About Us
+                    <br></br><span className='brushy_swash'>r</span>
+                </h1>
                 <div className='about_people'>
                     <div className='about_image'></div>
                     <div className='about_text'>

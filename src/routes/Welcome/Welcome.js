@@ -39,7 +39,6 @@ class Welcome extends Component {
                     <h2 className='welcome_title'>What We Do...
                         <br></br><span className='brushy_swash'>f</span>
                     </h2>
-                    {/* <h2 className='welcome_test'>abcd efgh ijkl mnop qrst uvw xyz</h2> */}
                     <ul>
                         <li>
                             <div className='welcome_services_type_title'> 
@@ -49,7 +48,7 @@ class Welcome extends Component {
                                 <p>Need to run some errands? Long work days away from?</p>
                                 <p>Don't stress, we can take care of your furry friend during the day.</p>
                                 <p>Your dog can become part of the pack today!</p>
-                                <Link to='/services' className='welcome_link'>Learn more about our services...</Link>
+                                <Link to='/services' className='welcome_link'>Learn more...</Link>
                             </div>
                         </li>
                         
@@ -61,7 +60,7 @@ class Welcome extends Component {
                                 <p>Going away for the weekend or having a late date night?</p>
                                 <p>We can accomdate overnight stays.</p>
                                 <p>Let our pup join the sleepover!</p>
-                                <Link to='/services' className='welcome_link'>Learn more about our services...</Link>
+                                <Link to='/services' className='welcome_link'>Learn more...</Link>
                             </div>
                         </li>
                     </ul>

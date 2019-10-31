@@ -10,6 +10,13 @@
 
 .about_main_title {
     font-family: 'Brushy';
+    line-height: 1;
+    margin-top: 40px;
+}
+
+.about_main_title .brushy_swash {
+    color: #fbac91;
+    font-size: 18px;
 }
 
 .about_people .about_image {
@@ -109,6 +116,18 @@
 }
 
 @media screen and (min-width: 1300px) {
+    .about_main_title {
+        font-size: 42px;
+    }
+
+    .about_main_title .brushy_swash {
+        font-size: 32px;
+    }
+
+    .about_title {
+        font-size: 32px;
+    }
+
     .about {
         background: white;
         padding: 10px;

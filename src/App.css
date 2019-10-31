@@ -10,6 +10,7 @@
     padding: 60px 0 70px;
     max-width: 860px;
     margin: auto;
+    background-color: white;
 }
 
 input, textarea {
@@ -94,5 +95,6 @@ button:active {
     .main_section {
         max-width: unset;
         padding: 20px 20px 70px 350px;
+        background-color: #ffedc6;
     }
 }

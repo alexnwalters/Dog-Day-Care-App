@@ -48,7 +48,6 @@
 
 @media screen and (min-width: 600px) {
     .form_field {
-        width: 90vw;
         margin: 10px auto;
         display: flex;
         justify-content: space-between;
@@ -67,6 +66,10 @@
 
 @media screen and (min-width: 1300px) {
     .form_field {
-        width: 75%;
+        width: 95%;
+    }
+
+    .form_field legend {
+        font-size: 32px;
     }
 }

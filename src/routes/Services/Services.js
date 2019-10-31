@@ -12,7 +12,9 @@ class Services extends Component {
     render() {
         return(
             <div className='services'>
-                <h1 className='services_main_title'>Our SerVices</h1>
+                <h1 className='services_main_title'>Our SerVices
+                    <br></br><span className='brushy_swash'>m</span>
+                </h1>
                 <section className='services_day'>
                     <div className='services_image'></div>
                     <div className='services_text'>

@@ -1,6 +1,15 @@
+.apply_main_title {
+    font-family: 'Brushy';
+    line-height: 1;
+    margin-top: 40px;
+}
+
+.apply_main_title .brushy_swash {
+    color: #96dae4;
+    font-size: 26px;
+}
+
 .apply_image {
-    background-image: url('../../utils/images/little_dog.jpg');
-    background-position-y: 20%;
     height: 150px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,12 +18,68 @@
     box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30), 0px -3px 3px 0px rgba(0,0,0,0.30);
 }
 
+.apply_image.banner {
+    background-image: url('../../utils/images/little_dog.jpg');
+    background-position-y: 20%;
+}
+
+.apply_image.image_1, .apply_image.image_2, .apply_image.image_3, .apply_image.image_4 {
+    display: none;
+}
+
 @media screen and (min-width: 1300px) {
     .apply {
         background: white;
         padding: 10px;
         -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
         -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
-        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);        
+    }
+
+    .apply_main_title {
+        width: 100%;
+        font-size: 42px;
+    }
+
+    .apply_main_title .brushy_swash {
+        font-size: 46px;
+    }
+
+    .apply_container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .apply_image_container {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .apply_image {
+        margin: auto;
+        width: 300px;
+        height: 350px;
+    }
+
+    .apply_image.image_1 {
+        display: block;
+        background-image: url('../../utils/images/chandler.jpg');
+    }
+
+    .apply_image.image_2 {
+        display: block;
+        background-image: url('../../utils/images/collie.jpg');
+    }
+
+    .apply_image.image_3 {
+        display: block;
+        background-image: url('../../utils/images/yoda_ears.jpg');
+    }
+
+    .apply_image.image_4 {
+        display: block;
+        background-image: url('../../utils/images/dog_fence.jpg');
     }
 }

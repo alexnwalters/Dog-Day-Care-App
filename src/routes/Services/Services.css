@@ -1,5 +1,12 @@
 .services_main_title {
     font-family: 'brushy';
+    line-height: 1;
+    margin-top: 40px;
+}
+
+.services_main_title .brushy_swash {
+    color: #a1f7a1;
+    font-size: 26px;
 }
 
 .services_image {
@@ -41,6 +48,7 @@
     padding-right: 10px;
     border-right: #ffa0a3 2px solid;
     text-align: left;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .services_info .services_details {
@@ -97,6 +105,18 @@
         -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
         -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
         box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
+    }
+
+    .services_main_title {
+        font-size: 42px;
+    }
+
+    .services_main_title .brushy_swash {
+        font-size: 44px;
+    }
+
+    .services_title {
+        font-size: 32px;
     }
 
     .services_image {

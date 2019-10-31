@@ -1,8 +1,3 @@
-.welcome_test {
-    font-family: 'BrushySwash';
-    line-height: 1;
-}
-
 .welcome_hero {
     display: flex;
     flex-direction: column;
@@ -24,6 +19,11 @@
     font-family: 'Brushy';
     line-height: 1;
     margin-top: 40px;
+}
+
+.welcome_title .brushy_swash {
+    font-size: 36px;
+    color: #96dae4;
 }
 
 .welcome_link {
@@ -203,7 +203,6 @@
 
     .welcome_title .brushy_swash {
         font-size: 44px;
-        color: #96dae4;
     }
 
     .welcome_services_type_title {
@@ -265,7 +264,6 @@
         min-height: 300px;
         border: none;
         background: #ffa0a3;
-        /* background-image: linear-gradient(to top left, #ffa0a3, #ffa0a3, rgba(255, 255, 255, 0.5)); */
         box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
         -ms-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
         -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.30);
@@ -285,24 +283,20 @@
         background-color: #fbac91;
     }
 
-    /* width */
     .welcome_facebook_container::-webkit-scrollbar {
         width: 10px;
     }
     
-    /* Track */
     .welcome_facebook_container::-webkit-scrollbar-track {
         box-shadow: inset 0 0 5px grey; 
         border-radius: 10px;
     }
 
-    /* Handle */
     .welcome_facebook_container::-webkit-scrollbar-thumb {
         background: #96dae4;
         border-radius: 10px;
     }
 
-    /* Handle on hover */
     .welcome_facebook_container::-webkit-scrollbar-thumb:hover {
         background: #63b1bd;
     }

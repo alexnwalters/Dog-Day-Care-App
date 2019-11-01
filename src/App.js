@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route, withRouter } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer'
 import Welcome from './routes/Welcome/Welcome'
@@ -14,19 +14,6 @@ import NotFound from './routes/NotFound/NotFound';
 import './App.css'
 
 class App extends Component {
-    constructor(props){
-        super(props)
-        this.state = {
-            headerFocus: ''
-        }
-    }
-    
-    handleApplication = (application) => {
-        this.setState({
-            applications: [...this.state.applications, application]
-        })
-    }
-
     render() {
         return (
             <main className='App'>
@@ -52,4 +39,4 @@ class App extends Component {
     }
 }
 
-export default withRouter(App);
+export default App;

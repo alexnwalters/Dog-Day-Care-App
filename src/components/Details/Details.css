@@ -9,29 +9,49 @@
     background-color: rgba(0,0,0, 0.5);
 }
 
-.popup_close {
-    position: fixed;
-    right: 15%;
+.popup_inner_container {
+    position: absolute;
+    left: 5%;
+    right: 5%;
     top: 12%;
+    bottom: 12%;
+    margin: auto;
+    padding: 25px 0 10px 20px;
+    border-radius: 20px;
+    background: white;
 }
 
 .popup_details {
+    margin: 20px auto 0;
+    text-align: left;
+    display: inline-block;
+    width: 98%;
+    height: 95%;
+    overflow-y: scroll;
+}
+
+.popup_nav {
+    display: inline-block;
     position: absolute;
-    left: 10%;
-    right: 10%;
-    top: 10%;
-    bottom: 10%;
-    margin: auto;
-    padding: 25px 5px 10px;
-    border-radius: 20px;
     background: white;
-    overflow-y: auto;
+    border-radius: 20px;
+    width: 100%;
+    height: 45px;
+    top: 0;
+    left: 0;
+}
+
+.popup_close {
+    position: absolute;
+    right: 5%;
+    padding-top: 10px; 
+    cursor: pointer;
 }
 
 .popup_details_buttons {
-    position: fixed;
-    left: 15%;
-    top: 12%;
+    position: absolute;
+    padding-top: 10px;
+    left: 5%;
 }
 
 .popup_details_buttons button {
@@ -39,15 +59,23 @@
     padding: 4px;
 }
 
+.popup_details a:link {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 600px) { 
+    .popup_inner_container {
+        left: 15%;
+        right: 15%;
+    }
+}
+
 @media screen and (min-width: 1300px) {
-    .popup_details {
-        left: 30%;
+    .popup_inner_container {
+        left: 40%;
+        right: 25%;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
-    }
-
-    .popup_details_buttons {
-        left: 32%;
     }
 
     .popup_details::-webkit-scrollbar {

@@ -1,3 +1,62 @@
+# Dog Day Care - Pawsitive Vibez
+
+A React app used as a redesign exercise of an existing website.
+
+Live Demo: [Dog Day Care](https://dog-day-care-app.now.sh)
+
+## Setup
+
+Download and launch Express server found at [dog-day-care-api](https://github.com/alexnwalters/dog-day-care-api).
+
+The config.js will look to connect to your server at 'http://localhost:8000/api', you can link it to a deployed server by creating a .env and your own REACT_APP_API_ENDPOINT.
+
+## Redesign
+
+A friend had recently started a dog day care business and had created a quick website using a template site, [Pawsitive Vibez](https://www.pawsitivevibezmd.com/).  She had noted it was something she had done as an afterthought and asked if I could help clean it up a bit.
+
+One of my main goals was to change her use of space and divide up the information so customers aren't overloaded at any given spot.  
+
+The second goal was to create a backend server for her to manage her applications pulling away from the third-party survey she was currently using.
+
+### Client Side
+
+#### Welcome
+
+For this page, I mostly wanted to remove some of the information.  I want to use this page as more of an overview just providing the basics but allowing the customer to navigate to other pages for more detail about the business or their services elsewhere.
+
+One issue she noted with her site was the review section required hover over pictures to then display the reviews, which reduced how mobile-friendly the design was.  Instead what I did was embed actually facebook reviews of the company.
+
+#### About / Services
+
+The information I pulled off the welcome page, I then expanded on in these pages specific to their focus.  I used this as space to also add back dog pictures that were removed from the review section change.
+
+#### Applicaton 
+
+Her current survey was one she set up with a third party site and took the users away from her page, additional it consisted only of textarea open inputs. I was worried this opened her up to have questions not answered correctly, so I broke up the questions that I could.  I used a fair amount of Yes/No questions to prevent the application from facing fatigue and abandoning the form. Once the required fields are completed the application is pushed to the server and a thank you confirmation is presented.
+
+### Admin Login
+
+Admin Login allows the business owner to log in to review stored service requests.
+
+Sample Login
+
+```
+Username: Testuser
+Password: Test123
+```
+### Request Administration
+
+I created a landing page for her that will display the current status of her requests between pending, accepted and declined.  Each item is clickable and will display the full details of each request once selected.  
+
+The request details popup will display all of the information collected from the service requests and provides buttons to change the status for the request and even delete the request altogether.
+
+## Skills
+
+* HTML, CSS, JSX
+* Mobile Responsive Design
+* React Router
+* Jest smoke tests
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -36,33 +95,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

@@ -88,47 +88,51 @@ class Details extends Component {
         }
         return (
             <div className='popup_container'>
-                <div className='popup_details'>
-                    <FontAwesomeIcon icon='times' className='popup_close' onClick={e => {this.onClose(e)}}> Close </FontAwesomeIcon>
-                    <div className='popup_details_buttons'>
-                        {this.renderButtons()}
+                <div className='popup_inner_container'>
+                    <div className='popup_nav'>
+                        <FontAwesomeIcon icon='times' className='popup_close' onClick={e => {this.onClose(e)}}> Close </FontAwesomeIcon>
+                        <div className='popup_details_buttons'>
+                            {this.renderButtons()}
+                        </div>
                     </div>
-                    <h2>Request Details</h2>
-                    <ul>
-                        <li>{service_info.service}</li>
-                        <li>{service_info.care_date}</li>
-                        <li>{service_info.status}</li>
-                    </ul>
-                    <div>
-                        <h3>Contact Information</h3>
-                        <p>Name: {contact_info.contact_name}</p>
-                        <p>Email: <a href={`mailto:${contact_info.email}?Subject=Thank%20you%20for%20your%20care%20request!`} target='blank'>{contact_info.email}</a></p>
-                        <p>Phone: {contact_info.phone}</p>
-                    </div>
-                    <div>
-                        <h3>Dog Details</h3>
-                        <p>Name: {dog_info.dog_name}</p>
-                        <p>Breed: {dog_info.breed}</p>
-                        <p>Age: {dog_info.age_yrs} yrs. {dog_info.age_mos} mos.</p>
-                        <p>Sex: {dog_info.sex}</p>
-                        <p>Spayed/Neutered: {dog_info.spayed}</p>
-                        <p>Last Exam: {dog_info.exam}</p>
-                        <p>Vaccines: {dog_info.vaccines}</p>
-                        <p>Medical Notes: {dog_info.medical}</p>
-                    </div>
-                    <div>
-                        <h3>Behavioral Review</h3>
-                        <p>Prior Daycare: {behavioral_info.prior_care}</p>
-                        <p>Crate Trained: {behavioral_info.crate}</p>
-                        <p>Escape Crate/Fence: {behavioral_info.escape}</p>
-                        <p>Other Pets: {behavioral_info.other_pets}</p>
-                        <p>Growl when items taken: {behavioral_info.growl}</p>
-                        <p>Growl when approached: {behavioral_info.growl_other}</p>
-                        <p>Bite Before: {behavioral_info.bite}</p>
-                        <p>Bite Details: {behavioral_info.bite_details}</p>
-                        <p>Behavior w/ Children: {behavioral_info.children}</p>
-                        <p>Behavior w/ Visitors: {behavioral_info.visitors}</p>
-                        <p>Behavior Owner Absence: {behavioral_info.absent}</p>
+                    <div className='popup_details'>
+                        <h2>Request Details</h2>
+                        <ul>
+                            <li>{service_info.service}</li>
+                            <li>{service_info.care_date}</li>
+                            <li>{service_info.status}</li>
+                        </ul>
+                        <div>
+                            <h3>Contact Information</h3>
+                            <p>Name: {contact_info.contact_name}</p>
+                            <p>Email: <a href={`mailto:${contact_info.email}?Subject=Thank%20you%20for%20your%20care%20request!`} target='blank'>{contact_info.email}</a></p>
+                            <p>Phone: {contact_info.phone}</p>
+                        </div>
+                        <div>
+                            <h3>Dog Details</h3>
+                            <p>Name: {dog_info.dog_name}</p>
+                            <p>Breed: {dog_info.breed}</p>
+                            <p>Age: {dog_info.age_yrs} yrs. {dog_info.age_mos} mos.</p>
+                            <p>Sex: {dog_info.sex}</p>
+                            <p>Spayed/Neutered: {dog_info.spayed}</p>
+                            <p>Last Exam: {dog_info.exam}</p>
+                            <p>Vaccines: {dog_info.vaccines}</p>
+                            <p>Medical Notes: {dog_info.medical}</p>
+                        </div>
+                        <div>
+                            <h3>Behavioral Review</h3>
+                            <p>Prior Daycare: {behavioral_info.prior_care}</p>
+                            <p>Crate Trained: {behavioral_info.crate}</p>
+                            <p>Escape Crate/Fence: {behavioral_info.escape}</p>
+                            <p>Other Pets: {behavioral_info.other_pets}</p>
+                            <p>Growl when items taken: {behavioral_info.growl}</p>
+                            <p>Growl when approached: {behavioral_info.growl_other}</p>
+                            <p>Bite Before: {behavioral_info.bite}</p>
+                            <p>Bite Details: {behavioral_info.bite_details}</p>
+                            <p>Behavior w/ Children: {behavioral_info.children}</p>
+                            <p>Behavior w/ Visitors: {behavioral_info.visitors}</p>
+                            <p>Behavior Owner Absence: {behavioral_info.absent}</p>
+                        </div>
                     </div>
                 </div>
             </div>

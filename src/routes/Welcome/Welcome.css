@@ -26,6 +26,10 @@
     color: #96dae4;
 }
 
+.welcome_reviews .welcome_title .brushy_swash {
+    font-size: 30px;
+}
+
 .welcome_link {
 	position: relative;
 	z-index: 1;

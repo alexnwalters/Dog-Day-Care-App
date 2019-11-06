@@ -33,6 +33,7 @@ One issue she noted with her site was the review section required hover over pic
 The information I pulled off the welcome page, I then expanded on in these pages specific to their focus.  I used this as space to also add back dog pictures that were removed from the review section change.
 
 ![About Screen](https://github.com/alexnwalters/Dog-Day-Care-App/blob/master/readme_pics/screenshot_about_ipad.png "About")
+<img src="https://github.com/alexnwalters/Dog-Day-Care-App/blob/master/readme_pics/screenshot_about_ipad.png" alt="about" width="500px" />
 ![Services Screen](https://github.com/alexnwalters/Dog-Day-Care-App/blob/master/readme_pics/screenshot_services_ipad.png "Services")
 
 #### Applicaton 

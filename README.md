@@ -26,20 +26,20 @@ For this page, I mostly wanted to remove some of the information.  I want to use
 
 One issue she noted with her site was the review section required hover over pictures to then display the reviews, which reduced how mobile-friendly the design was.  Instead what I did was embed actually facebook reviews of the company.
 
-![Welcome Screen](https://github.com/alexnwalters/Dog-Day-Care-App/readme_pics/screenshot_welcome_ipad.png "Welcome")
+![Welcome Screen](https://github.com/alexnwalters/Dog-Day-Care-App/blob/master/readmeme_pics/screenshot_welcome_ipad.png "Welcome")
 
 #### About / Services
 
 The information I pulled off the welcome page, I then expanded on in these pages specific to their focus.  I used this as space to also add back dog pictures that were removed from the review section change.
 
-![About Screen](https://github.com/alexnwalters/Dog-Day-Care-App/readme_pics/screenshot_about_ipad.png "About")
-![Services Screen](https://github.com/alexnwalters/Dog-Day-Care-App/readme_pics/screenshot_services_ipad.png "Services")
+![About Screen](https://github.com/alexnwalters/Dog-Day-Care-App/blob/master/readmeme_pics/screenshot_about_ipad.png "About")
+![Services Screen](https://github.com/alexnwalters/Dog-Day-Care-App/blob/master/readmeme_pics/screenshot_services_ipad.png "Services")
 
 #### Applicaton 
 
 Her current survey was one she set up with a third party site and took the users away from her page, additional it consisted only of textarea open inputs. I was worried this opened her up to have questions not answered correctly, so I broke up the questions that I could.  I used a fair amount of Yes/No questions to prevent the application from facing fatigue and abandoning the form. Once the required fields are completed the application is pushed to the server and a thank you confirmation is presented.
 
-![Application Screen](https://github.com/alexnwalters/Dog-Day-Care-App/readme_pics/screenshot_application_ipad.png "Application")
+![Application Screen](https://github.com/alexnwalters/Dog-Day-Care-App/blob/master/readmeme_pics/screenshot_application_ipad.png "Application")
 
 ### Admin Login
 
@@ -51,17 +51,17 @@ Sample Login
 Username: Testuser
 Password: Test123
 ```
-![Login Screen](https://github.com/alexnwalters/Dog-Day-Care-App/readme_pics/screenshot_login_ipad.png "Login")
+![Login Screen](https://github.com/alexnwalters/Dog-Day-Care-App/blob/master/readmeme_pics/screenshot_login_ipad.png "Login")
 
 ### Request Administration
 
 I created a landing page for her that will display the current status of her requests between pending, accepted and declined.  Each item is clickable and will display the full details of each request once selected.
 
-![Admin Screen](https://github.com/alexnwalters/Dog-Day-Care-App/readme_pics/screenshot_admin_ipad.png "Admin")
+![Admin Screen](https://github.com/alexnwalters/Dog-Day-Care-App/blob/master/readmeme_pics/screenshot_admin_ipad.png "Admin")
 
 The request details popup will display all of the information collected from the service requests and provides buttons to change the status for the request and even delete the request altogether.
 
-![Details Screen](https://github.com/alexnwalters/Dog-Day-Care-App/readme_pics/screenshot_details_ipad.png "Details")
+![Details Screen](https://github.com/alexnwalters/Dog-Day-Care-App/blob/master/readmeme_pics/screenshot_details_ipad.png "Details")
 
 ## Skills
 

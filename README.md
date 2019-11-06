@@ -26,7 +26,7 @@ For this page, I mostly wanted to remove some of the information.  I want to use
 
 One issue she noted with her site was the review section required hover over pictures to then display the reviews, which reduced how mobile-friendly the design was.  Instead what I did was embed actually facebook reviews of the company.
 
-![Welcome Screen](https://github.com/alexnwalters/Dog-Day-Care-App/blob/master/readme_pics/screenshot_welcome_ipad.png "Welcome" | width=600)
+![Welcome Screen](https://github.com/alexnwalters/Dog-Day-Care-App/blob/master/readme_pics/screenshot_welcome_ipad.png&s=500 "Welcome")
 
 #### About / Services
 

@@ -16,12 +16,14 @@ class ApplicationForm extends Component {
         }
     }
 
+    //makes sure form renders when component is mounted
     renderApp() {
         this.setState({
             confirmation: false
         })
     }
 
+    //changes to rendering if form submission is successful
     renderConfirmation() {
         this.setState({
             confirmation: true
@@ -78,6 +80,7 @@ class ApplicationForm extends Component {
             })
     }
 
+    //handles html of confirmation
     renderThankYou() {
         return (
             <div className='form_thanks'>

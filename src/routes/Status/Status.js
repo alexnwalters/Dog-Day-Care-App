@@ -30,6 +30,7 @@ class Status extends Component {
         })
     }
 
+    //makes api get call of all care reqeusts
     componentDidMount() {
         if((document.documentElement.scrollTop || document.body.scrollTop) !== 0) {
             window.scrollTo(0, 0);

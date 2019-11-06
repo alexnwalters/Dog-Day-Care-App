@@ -1,6 +1,7 @@
 import config from '../config'
 import TokenService from './TokenService'
 
+//handles services for API requests endpoints
 const RequestsApiService = {
     getRequests(){
         return fetch(`${config.API_ENDPOINT}/requests`, {
@@ -21,7 +22,6 @@ const RequestsApiService = {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
-                'authorization': `bearer ${TokenService.getAuthToken()}`
             },
             body: JSON.stringify(newRequest),
         })

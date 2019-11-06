@@ -30,6 +30,7 @@ class LoginFrom extends Component {
 
         const { user_name, password } = e.target
 
+        //sends login request and returns jwt token if valid login
         AuthApiService.postLogin({
             user_name: user_name.value,
             password: password.value
@@ -63,7 +64,7 @@ class LoginFrom extends Component {
                     </div>
                     
                     {(!loading)
-                        ? <button type='sumbit'>Log In</button>
+                        ? <button type='submit'>Log In</button>
                         : <Loading />}
                     
                 </form>

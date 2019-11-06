@@ -16,6 +16,7 @@ class Request extends Component {
         }
     }
     
+    //displays details popup
     showDetails = (e) => {
         this.setState({ show: !this.state.show })
     }

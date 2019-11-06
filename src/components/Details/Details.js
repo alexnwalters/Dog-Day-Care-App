@@ -18,6 +18,7 @@ class Details extends Component {
         this.props.onClose && this.props.onClose(e)
     }
 
+    //patch for change to accepted status
     handleAccept = () => {
         const accepted = { status: 'Accepted' }
         const request_id = this.props.id
@@ -27,6 +28,7 @@ class Details extends Component {
             })
     }
 
+    //patch for change to declined status
     handleDecline = () => {
         const declined = { status: 'Declined' }
         const request_id = this.props.id
@@ -36,6 +38,7 @@ class Details extends Component {
             })
     }
 
+    //patch for change to pending status
     handlePending = () => {
         const pending = { status: 'Pending' }
         const request_id = this.props.id
@@ -45,6 +48,7 @@ class Details extends Component {
             })
     }
 
+    //deletes request
     handleDelete = () => {
         const request_id = this.props.id
         RequestsApiService.deleteRequest(request_id)

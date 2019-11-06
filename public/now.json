@@ -4,6 +4,10 @@
     "name": "dog-day-care-app",
     "routes": [
         {
+          "src": "^/freddie-favicon.ico$",
+          "dest": "/freddie-favicon.ico"
+       },
+       {
           "src": "^/static/(.*)",
           "dest": "/static/$1"
         },

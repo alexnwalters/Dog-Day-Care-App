@@ -19,7 +19,7 @@ class About extends Component {
                 <div className='about_people'>
                     <div className='about_image'></div>
                     <div className='about_text'>
-                        <h3 className='about_title'>Our People</h3>                    
+                        <h3 className='about_title'>Maria & Freddie</h3>                    
                         <div className='about_details'>
                             <p>Hi there!  My name is Maria Drader.  I am so glad you decided to visit my site!  After 3 years of managing a doggie daycare and providing boarding, walks, and house visits, I decided to branch out and open a business of my very own.</p>
                             <p>I live in Adamstown, MD with my husband and our 6 year old White German Shepherd named Freddie.</p>
